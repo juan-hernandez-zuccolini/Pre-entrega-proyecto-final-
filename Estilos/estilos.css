@@ -282,14 +282,14 @@ footer {
 .nostexto {
   width: 900px;
   font-size: 25px;
-  background-color: orange;
+  background-color: #85ce80;
   padding: 25px;
   text-align: justify;
 }
 
 .nosgaleria {
   width: 100%;
-  background-color: red;
+  background-color: #9df997;
 }
 
 @media screen and (max-width: 1440px) {
