@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
   background-color: #b6ffb1;
   width: 10px;
@@ -31,6 +35,7 @@ body::-webkit-scrollbar-thumb {
   width: 200px;
   height: auto;
   padding: 20px;
+  filter: drop-shadow(10px 0 10px rgba(16, 56, 31, 0.727));
   margin-left: 40px;
   margin-right: 40px;
   transition: 0.7s;
@@ -276,11 +281,11 @@ footer {
 .nos {
   display: flex;
   flex-direction: row;
-  height: 1000px;
+  height: calc(100vp - 200px - 250px);
 }
 
 .nostexto {
-  width: 900px;
+  width: 50%;
   font-size: 25px;
   background-color: #85ce80;
   padding: 25px;
@@ -288,8 +293,69 @@ footer {
 }
 
 .nosgaleria {
-  width: 100%;
+  width: 50%;
+  height: auto;
   background-color: #9df997;
+  background-size: cover;
+}
+
+.concont {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 200px - 250px);
+  background-image: linear-gradient(to left, rgba(113, 255, 144, 0.753) 30%, rgba(113, 255, 144, 0.1)), url(/Multimedia/Nosotros/spinach.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0 40px 120px;
+}
+
+.formulario {
+  height: 460px;
+  width: 900px;
+}
+
+.texto {
+  height: 400px;
+  width: 50%;
+}
+
+.namemail, textarea {
+  color: rgb(55, 55, 55);
+  background-color: rgb(211, 255, 206);
+  box-shadow: 0 0 20px rgba(16, 56, 31, 0.88);
+  border-radius: 5px;
+  border: 0;
+  padding: 10px;
+  width: 700px;
+  font-size: 20px;
+}
+
+.btn-env, .btn-res {
+  background-color: rgba(205, 255, 158, 0.611);
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 25px;
+  color: rgb(0, 75, 0);
+}
+
+.btn-env:hover, .btn-res:hover {
+  background-color: rgba(205, 255, 158, 0.77);
+  color: rgb(0, 43, 0);
+}
+
+.pf {
+  font-size: 40px;
+}
+
+.pf, .preg, .resp {
+  color: rgb(0, 43, 0);
+}
+
+.resp {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1440px) {

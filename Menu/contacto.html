@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../Estilos/estilos.css">
     <title>Condado Vegano, contacto</title>
 </head>
-<body>
+<body class="contactbody">
     <!-- header inicia -->
     <div class="barra-nav">
         <nav class="navbar navbar-expand-md barra-nav">
@@ -28,10 +28,10 @@
             <div class="menu collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="lista-menu navbar-nav">
                     <li class="nav-item">
-                        <a class="item-menu nav-link" href="#">Productos</a>
+                        <a class="item-menu nav-link" href="../#prod">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="item-menu nav-link" href="#">Locales</a>
+                        <a class="item-menu nav-link" href="../#loc">Locales</a>
                     </li>
                     <li class="nav-item">
                         <a class="item-menu nav-link" href="./nosotros.html">Nosotros</a>
@@ -41,22 +41,32 @@
         </nav>
     </div>
     <!-- header finaliza -->
+    <!-- formulario inicia -->
     <section class="concont">
         <section class="formulario">
             <form action="base.php" method="post" enctype="text/plain">
                 <fieldset> 
-                    <input type="text" placeholder="Nombre"><br><br>
-                    <input type="text"  required placeholder="Mail de contacto"><br><br>
-                    <textarea cols="100" rows="10" placeholder="Déjanos tu mensaje"></textarea><br>
-                    <input class="boton" type="file"><br>
-                    <input class="boton" type="submit" name="Enviar" id="">
-                    <input class="boton" type="reset" name="Reestablecer">
-                    <p class="gracias">Gracias por escribirnos, responderemos tu consulta a la brevedad.</p>
+                    <input class="namemail" type="text" placeholder="Nombre"><br><br>
+                    <input class="namemail" type="text"  required placeholder="Mail de contacto"><br><br>
+                    <textarea cols="100" rows="7" placeholder="Déjanos tu mensaje"></textarea><br>
+                    <input class="boton btn-env" type="submit" name="Enviar" id="">
+                    <input class="boton btn-res" type="reset" name="Reestablecer">
+                    
                 </fieldset>
             </form>
         </section>
-        <div class="fondoContacto"></div>
+        <div class="texto">
+            <h2 class="pf">Preguntas frecuentes</h2>
+            <h3 class="preg">Lorem ipsum dolor sit amet, consectetur adipisicing elit?</h3>
+            <p class="resp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae illo eligendi aperiam itaque ducimus nesciunt nobis blanditiis veniam ipsum facere!</p>
+            <h3 class="preg">Lorem ipsum dolor sit amet, consectetur adipisicing elit?</h3>
+            <p class="resp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae illo eligendi aperiam itaque ducimus nesciunt nobis blanditiis veniam ipsum facere!</p>
+            <h3 class="preg">Lorem ipsum dolor sit amet, consectetur adipisicing elit?</h3>
+            <p class="resp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae illo eligendi aperiam itaque ducimus nesciunt nobis blanditiis veniam ipsum facere!</p>
+        </div>
+        <!-- <div class="fondoContacto"></div> -->
     </section>
+    <!-- formulario finaliza -->
     <!-- footer inicia -->
     <footer>
         <div class="contacto">

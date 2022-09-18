@@ -21,6 +21,9 @@ sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body::-webkit-scrollbar{
     background-color: #b6ffb1;
     width: 10px;
@@ -45,6 +48,7 @@ body::-webkit-scrollbar-thumb{
     width: 200px;
     height: auto;
     padding: 20px;
+    filter: drop-shadow(10px 0 10px rgba(16, 56, 31, 0.727));
     margin-left: 40px;
     margin-right: 40px;
     transition: 0.7s;
@@ -162,7 +166,7 @@ body::-webkit-scrollbar-thumb{
     color: black;
 }
 
-.btn-comp {
+.btn-comp{
     background-color: #52cf80;
     border: 0;
     padding: 15px;
@@ -172,7 +176,7 @@ body::-webkit-scrollbar-thumb{
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.445);
 }
 
-.btn-comp:hover {
+.btn-comp:hover{
     background-color: #c8f10d;
     font-size: 25px;
     color: rgb(68, 68, 68);
@@ -234,6 +238,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 footer {
+    // background-image: url(/Multimedia/Nosotros/spinach.jpg);
     background-color: rgb(113, 255, 144);
     text-align: center;
     width: 100%;
@@ -271,21 +276,71 @@ footer {
 .nos{
     display: flex;
     flex-direction: row;
-    height: 1000px;
+    height: calc(100vp - 200px - 250px);
 }
 .nostexto{
-    width: 900px;
+    width: 50%;
     font-size: 25px;
     background-color: #85ce80;
     padding: 25px;
     text-align: justify;
 }
 .nosgaleria{
-    width: 100%;
+    width: 50%;
+    height: auto;
     background-color: #9df997;
+    background-size: cover;
 }
-
-
+.concont{
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 200px - 250px);
+    background-image: linear-gradient(to left, rgba(113, 255, 144, 0.753) 30%, rgba(113, 255, 144, 0.1)), url(/Multimedia/Nosotros/spinach.jpg);
+    background-size: cover;
+    background-position:center;
+    padding: 40px 0 40px 120px;
+}
+.formulario{
+    height: 460px;
+    width: 900px;
+}
+.texto{
+    height: 400px;
+    width: 50%;
+}
+.namemail, textarea{
+    color: rgb(55, 55, 55);
+    background-color: rgb(211, 255, 206);
+    box-shadow: 0 0 20px rgba(16, 56, 31, 0.88);
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    width: 700px;
+    font-size: 20px;
+}
+.btn-env, .btn-res{
+    background-color: rgba(205, 255, 158, 0.611);
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 25px;
+    color: rgb(0, 75, 0);
+}
+.btn-env:hover, .btn-res:hover{
+    background-color: rgba(205, 255, 158, 0.77);
+    color: rgb(0, 43, 0);
+}
+.pf{
+    font-size: 40px;
+}
+.pf, .preg, .resp{
+    color: rgb(0, 43, 0);
+}
+.resp{
+    font-size: 20px;
+}
 @media screen and (max-width: 1440px) {
     .nav-link {
         margin-left: 40px;
@@ -304,13 +359,6 @@ footer {
     .search{
         display: none;
     }
-    // .search-md{
-    //     background-color: red;
-    //     padding: 5px;
-    //     margin: 0;
-    //     margin-bottom: 0;
-    //     border: 0;
-    // }
     .logo{
         margin-right: 10px;
     }
