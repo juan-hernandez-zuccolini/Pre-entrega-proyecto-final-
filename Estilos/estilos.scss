@@ -8,14 +8,6 @@ sans-serif;
 $texto: 'Open Sans',
 sans-serif;
 
-// PALETA DE COLORES 
-// $color1: #4158D0;
-// background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-
-// $color1:
-// $color1:
-// $color1:
-// $color1:
 * {
     margin: 0;
     padding: 0;
@@ -42,6 +34,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     padding: 0;
     margin: 0;
+    font-family: $menu;
 }
 
 #logo {
@@ -62,32 +55,41 @@ body::-webkit-scrollbar-thumb{
 .menu {
     display: flex;
     justify-content: center;
-    padding: 0;
-    padding-top: 80px;
-    margin: 0;
+    height: 100px;
+    padding-top: 0;
+
     width: 400px;
+    height: 80px;
 }
-.menu-emergente{
-    background-color: red;
+ul.lista-menu.navbar-nav{
+    height: 100px;
+    width: 550px;
 }
+a.item-menu.nav-link{
+    height: 50px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
 .nav-link {
     display: flex;
     justify-content: space-between;
     color: white;
     text-shadow: 0 0 5px black;
-    padding: 15px;
-    margin-left: 70px;
-    font-size: 40px;
-    transition: 0.7s;
+    font-size: 30px;
+    transition: 0.3s;
 }
-
-.nav-link:hover {
+li.nav-item{
+    margin: 50px;
+    width: 80px;
+    height: 50px;
+}
+.nav-link:hover{
     color: white;
     background-color: rgba(0, 0, 0, 0.308);
-    border-radius: 15px;
-    font-size: 45px;
+    border-radius: 5px;
 }
-
 .navbar-toggler-icon {
     font-size: 70px;
     color: white;
@@ -102,7 +104,6 @@ body::-webkit-scrollbar-thumb{
     border: 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.801);
 }
-
 .search {
     width: 400px;
     background-image: none;
@@ -140,6 +141,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.445);
+    font-family: $titulos;
 }
 
 .contprod {
@@ -155,10 +157,11 @@ body::-webkit-scrollbar-thumb{
     border-radius: 5px;
 }
 .product {
-    color: rgb(75, 75, 75);
+    color: rgb(16, 16, 16);
     background: radial-gradient(circle 400px, #fff5b4 26%, #9df997 100%);
     padding: 15px;
     transition: 0.3s;
+    font-family: $texto;
 }
 
 .product:hover {
@@ -169,31 +172,31 @@ body::-webkit-scrollbar-thumb{
 .btn-comp{
     background-color: #52cf80;
     border: 0;
-    padding: 15px;
-    font-size: 25px;
-    transition: 0.5s;
-    border-radius: 8px;
+    padding: 8px 15px;
+    font-size: 20px;
+    transition: 0.2s;
+    border-radius: 5px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.445);
 }
 
 .btn-comp:hover{
     background-color: #c8f10d;
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(68, 68, 68);
 }
 
 .subir {
     color: rgba(255, 255, 255, 0.644);
-    font-size: 50px;
-    background-color: rgba(43, 255, 0, 0.452);
-    border-radius: 50px;
-    width: 100px;
-    height: 100px;
+    font-size: 40px;
+    background-color: rgba(43, 255, 0, 0.353);
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
     text-align: center;
-    line-height: 100px;
+    line-height: 80px;
     position: fixed;
     bottom: 50px;
-    right: 50px;
+    right: 100px;
     transition: 0.2s;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.699);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.699);
@@ -201,12 +204,12 @@ body::-webkit-scrollbar-thumb{
 
 .subir:hover {
     color: rgba(255, 255, 255, 0.644);
-    font-size: 55px;
-    background-color: rgba(0, 206, 0, 0.603);
+    font-size: 50px;
+    background-color: rgba(117, 206, 0, 0.603);
     border-radius: 55px;
-    width: 110px;
-    height: 110px;
-    line-height: 110px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
 }
 .datosLocal{
     align-content: flex-start;
@@ -238,30 +241,28 @@ body::-webkit-scrollbar-thumb{
 }
 
 footer {
-    // background-image: url(/Multimedia/Nosotros/spinach.jpg);
     background-color: rgb(113, 255, 144);
     text-align: center;
     width: 100%;
-    height: 250px;
+    height: 180px;
     box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.445);
 }
 
 .contacto {
-    padding: 50px 0 0 15px;
+    padding: 25px 0 0 15px;
 }
 .tel, .mail{
     color: white;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.699);
 }
 .tel{
-    font-size: 40px;
-}
-.mail{
     font-size: 30px;
 }
+.mail{
+    font-size: 20px;
+}
 .redes {
-    font-size: 50px;
-    padding-bottom: 20px;
+    font-size: 40px;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.699);
 }
 
@@ -276,37 +277,63 @@ footer {
 .nos{
     display: flex;
     flex-direction: row;
-    height: calc(100vp - 200px - 250px);
+    height: calc(100vp - 200px - 180px);
 }
 .nostexto{
     width: 50%;
+    height: calc(100vh - 200px - 180px);
     font-size: 25px;
-    background-color: #85ce80;
+    background-color: #ceffa0;
     padding: 25px;
     text-align: justify;
+    overflow: auto;
+    font-family: $texto;
+}
+.nostexto::-webkit-scrollbar{
+    background-color: #b6ffb1;
+    width: 10px;
+}
+.nostexto::-webkit-scrollbar-thumb{
+    background-color: rgb(46, 151, 55);
+    border-radius: 5px;
 }
 .nosgaleria{
     width: 50%;
-    height: auto;
+    height: 100%;
     background-color: #9df997;
     background-size: cover;
 }
+.carousel-item{
+    height: calc(100vh - 200px - 180px);
+}
 .concont{
     display: flex;
-    flex-direction: row;
-    height: calc(100vh - 200px - 250px);
-    background-image: linear-gradient(to left, rgba(113, 255, 144, 0.753) 30%, rgba(113, 255, 144, 0.1)), url(/Multimedia/Nosotros/spinach.jpg);
+    height: calc(100vh - 200px - 180px);
+    justify-content: space-around;
+    background-image: linear-gradient(to left, rgba(113, 255, 144, 0.922) 40%, rgba(113, 255, 144, 0.1)), url(/Multimedia/Nosotros/spinach.jpg);
     background-size: cover;
-    background-position:center;
-    padding: 40px 0 40px 120px;
+    overflow: auto;
 }
 .formulario{
-    height: 460px;
-    width: 900px;
+    height: 100%;
+    width: 50%; 
+    padding: 80px 50px 0 80px;
 }
+
 .texto{
-    height: 400px;
+    padding: 0 50px 50px 0;
+    margin-top: 20px;
     width: 50%;
+    overflow: auto;
+    font-family: $texto;
+}
+.texto::-webkit-scrollbar{
+    background-color: #b6ffb1;
+    width: 10px;
+}
+.texto::-webkit-scrollbar-thumb{
+    background-color: rgb(46, 151, 55);
+    border-radius: 5px;
 }
 .namemail, textarea{
     color: rgb(55, 55, 55);
@@ -314,45 +341,133 @@ footer {
     box-shadow: 0 0 20px rgba(16, 56, 31, 0.88);
     border-radius: 5px;
     border: 0;
-    padding: 10px;
-    width: 700px;
+    padding: 0 10px;
+    width: 100%;
     font-size: 20px;
 }
+.textarea{
+    height: auto;
+}
 .btn-env, .btn-res{
-    background-color: rgba(205, 255, 158, 0.611);
+    background-color: rgba(113, 255, 144, 0.639);
     padding: 10px 30px;
     border-radius: 5px;
     border: 0;
     margin-top: 20px;
     margin-left: 30px;
     font-size: 25px;
-    color: rgb(0, 75, 0);
+    color: rgb(0, 34, 0);
 }
 .btn-env:hover, .btn-res:hover{
-    background-color: rgba(205, 255, 158, 0.77);
-    color: rgb(0, 43, 0);
+    background-color: rgba(0, 34, 0, 0.65);
+    color: rgb(100, 190, 100);
 }
 .pf{
+    padding: 0;
     font-size: 40px;
 }
 .pf, .preg, .resp{
-    color: rgb(0, 43, 0);
+    color: rgb(0, 25, 0);
 }
 .resp{
     font-size: 20px;
 }
+@media screen and (max-width: 1530px) {
+    .texto{
+    height: 400px;
+    }
+    .pf{
+        font-size: 30px;
+    }
+    .preg{
+        font-size: 22px;
+    }
+    .resp{
+        font-size: 20px;
+    }
+}
 @media screen and (max-width: 1440px) {
+    .navbar {
+        height: 120px;
+    }
+    #logo {
+        width: 140px;
+    }
+    
+    #logo:hover {
+        width: 150px;
+    }
     .nav-link {
-        margin-left: 40px;
+        font-size: 25px;
+        margin-bottom: 40px;
+        padding: 10px;
+        transition: 0.7s;
+
+    }
+    .nav-link:hover {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.308);
+        border-radius: 8px;
     }
     .search{
         width: 350px;
+        padding: 30px 0 0 0;
     }
     .sch{
         font-size: 20px;
     }
     .btn-sch{
         font-size: 20px;
+    }
+    .titular {
+        height: 50px;
+        padding: 8px;
+    }
+    .titular h3{
+        font-size: 25px;
+    }
+    .btn-env, .btn-res{
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-left: 25px;
+        font-size: 20px;
+    }
+    footer {
+        background-color: rgb(113, 255, 144);
+        height: 130px;
+    }
+    .contacto {
+        padding: 10px 0 0 0;
+    }
+    .tel{
+        font-size: 25px;
+    }
+    .mail{
+        font-size: 18px;
+    }
+    .redes {
+        font-size: 30px;
+    }
+    .nos, .concont{
+        height: calc(100vh - 120px - 130px);
+    }
+    .formulario{
+        height: 100%;
+        width: 50%; 
+        padding: 30px 50px 0 60px;
+        font-size: 10px;
+    }
+    .texto{
+        padding: 25px 40px 50px 25px;
+        margin: 0;
+        height: 100%;
+    }
+    .nostexto{
+        width: 50%;
+        height: calc(100vh - 120px - 130px);
+        font-size: 20px;
+        padding: 20px;
     }
 }
 @media screen and (max-width: 1350px) {
@@ -377,6 +492,46 @@ footer {
         font-size: 30px;
         margin-left: 30px;
     }
+    .subir {
+        font-size: 30px;
+        border-radius: 30px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        bottom: 40px;
+        right: 70px;
+        transition: 0.2s;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.699);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.699);
+    }
+    
+    .subir:hover {
+        font-size: 40px;
+        border-radius: 35px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+    .btn-env, .btn-res{
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 17px;
+    }
+    .texto{
+        height: 400px;
+        }
+    .pf{
+        font-size: 30px;
+    }
+    .preg{
+        font-size: 20px;
+    }
+    .resp{
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (max-width: 875px) {
@@ -406,7 +561,9 @@ footer {
     .titular {
         height: 45px;
     }
-
+    .menu {
+        background-color: rgb(113, 255, 144);
+    }
     .navbar {
         height: 150px;
         align-items: center;
@@ -416,10 +573,31 @@ footer {
         font-size: 40px;
         margin-right: 50px;
     }
+    .concont{
+        background-image: url(/Multimedia/Nosotros/spinach.jpg);
+    }
+    .texto{
+        padding: 50px;
+        background-color: rgba(113, 255, 144, 0.721);
+    }
 }
 
 // mediaquery sm
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    #logo {
+        width: 130px;
+        padding: 15px;
+        margin-left: 40px;
+        margin-right: 40px;
+        transition: 0.7s;
+    }
+    .navbar-toggler-icon {
+        font-size: 30px;
+        align-self: center;
+        padding-right: 0;
+        margin-top: 0;
+    }
+}
 
 // mediaquery para el search-md
 @media screen and (min-width: 1351px) {
