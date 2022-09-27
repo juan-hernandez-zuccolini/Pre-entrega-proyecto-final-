@@ -20,7 +20,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .barra-nav {
-  background-image: linear-gradient(to right, rgb(113, 255, 144) 5%, rgba(113, 255, 144, 0.1)), url(/Multimedia/Productos/remolacha.jpg);
+  background-image: linear-gradient(to right, rgb(113, 255, 144) 5%, rgba(113, 255, 144, 0.1)), url(./Multimedia/Productos/remolacha.jpg);
   background-size: cover;
 }
 
@@ -333,7 +333,7 @@ footer {
   display: flex;
   height: calc(100vh - 200px - 180px);
   justify-content: space-around;
-  background-image: linear-gradient(to left, rgba(113, 255, 144, 0.922) 40%, rgba(113, 255, 144, 0.1)), url(/Multimedia/Nosotros/spinach.jpg);
+  background-image: linear-gradient(to left, rgba(113, 255, 144, 0.922) 40%, rgba(113, 255, 144, 0.1)), url(./Multimedia/Nosotros/spinach.jpg);
   background-size: cover;
   overflow: auto;
 }
